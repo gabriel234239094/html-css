@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <style>
+        /* Adiciona um estilo para garantir que as imagens se ajustem ao tamanho da largura máxima do contêiner */
+        picture, img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o zoom do seu dispositivo.</p>
+    
+    <picture>
+   
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+      
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        
+        
+        <h1>Adicionando audio </h1>
+
+        <p>Vamos aprender a reproduzir audios em HTML5 </p>
+        
+     <audio preload="auto" autoplay controls loop>
+        <source src="midia/Into the Depths (Sting) - Jingle Punks.mp3" type="audio/mpeg" >
+
+        <source src="midia/Into the Depths (Sting) - Jingle Punks.mp3" type="audio/ogg">
+    
+        <source src="midia/Into the Depths (Sting) - Jingle Punks.mp3" type="audio/wav">
+    <p>Infelismente não concigo reproduzir seu audio por conda da incopactibilidade do seu navegador <a href="midia/Into the Depths (Sting) - Jingle Punks.mp3">Click a qui para baixar o arquivo </a> </p>
+    
+    </audio >
+
+    </picture>
+</body>
+</html>
